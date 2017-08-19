@@ -1,9 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="50dp"
     tools:context="com.androidedu.kodluyoruzakademi.androquiz.LoginScreenActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/activity_login_screen_txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="Kullanıcı Adı" />
+
+    <EditText
+        android:id="@+id/activity_login_screen_edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/activity_login_screen_txtUsername"
+        android:layout_marginTop="17dp"
+        android:layout_weight="1"
+        android:digits="ABCÇDEFGHIİJKLMNOÖPRSŞTUÜVYZabcçdefghıijklmnoöprsştuüvyz"
+        android:ems="10"
+        android:hint="Sadece alfa-numerik karakter giriniz."
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/activity_login_screen_txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_weight="1"
+        android:text="Şifre" />
+
+    <EditText
+        android:id="@+id/activity_login_screen_edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_login_screen_btnLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/activity_login_screen_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="112dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:text="Giriş" />
+
+</LinearLayout>

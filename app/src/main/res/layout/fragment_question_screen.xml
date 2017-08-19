@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AB7834"
+    android:orientation="vertical"
+    tools:context="com.androidedu.kodluyoruzakademi.androquiz.QuestionScreenFragment">
+
+    <TextView
+        android:id="@+id/fragment_question_screen_txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/fragment_question_screen_txtQuestionNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Soru #" />
+
+    <TextView
+        android:id="@+id/fragment_question_screen_txtQuestionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="7"
+        android:text="TextView\nTextView\nTextView" />
+
+    <RadioGroup
+        android:id="@+id/fragment_question_screen_radioGroupAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/fragment_question_screen_radioFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton1" />
+
+        <RadioButton
+            android:id="@+id/fragment_question_screen_radioSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton2" />
+
+        <RadioButton
+            android:id="@+id/fragment_question_screen_radioThird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton3" />
+
+        <RadioButton
+            android:id="@+id/fragment_question_screen_radioFourth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/fragment_question_screen_btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Devam Et" />
+
+</LinearLayout>
